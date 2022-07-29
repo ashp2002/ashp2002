@@ -9,7 +9,7 @@ import
 
 const Page_four = () => {
     return (
-        <Text fontSize="2xl">page four</Text>
+        <Text fontSize="2xl">page four@</Text>
     )
 }
 

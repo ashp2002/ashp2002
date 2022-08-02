@@ -6,7 +6,8 @@ import
     NativeBaseProvider,
     Text,
     Image,
-    Flex 
+    Flex, 
+    View
 } from "native-base";
 
 const Home_TitleButton = (props, {navigation}) => {
@@ -37,29 +38,28 @@ const Home_TitleButton = (props, {navigation}) => {
                     </Box>
                 </Flex>
             </Box>   
-            <Box flex={1}>
+            <View style={{ width: 400 }}>
                 <Image
                     source={img}
                     height={150}
                 />
                 <Flex 
                     direction="row"
-                    position="absolute" 
-                    bottom={110}
-                    pl={2}
+                    //position="absolute" 
+                    style={{ bottom: 110, paddingLeft: 5, position: "absolute"}}
                 >
-                    <Box bg="blue.500" width={2} height={8}>
+                    <Box style={{ backgroundColor: "black", width: 10, height: 35 }}>
 
                     </Box>
-                    <Box ml={2} pt={1}>
+                    <View style={{ marginLeft: 10, paddingTop: 5}}>
                         <Text 
-                            fontWeight="bold"
+                            style={{ fontWeight: "800" }}
                         >
                             대회 정보
                         </Text>
-                    </Box>
+                    </View>
                 </Flex>
-            </Box>
+            </View>
         </Flex>
             
         </>
